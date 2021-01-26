@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Critique My Pic</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="top">
-    <h1>Critique My Pic</h1>
-    <input type="file" id="button">
-</div>
+    <!--Title-->
+    <div id="top">
+        <h1>Critique My Pic</h1>
+        <!--Uplaoder-->
+        <input type="file" id="button">
+        <br>
+        <p>Uplaod your picture</p>
 
-<div id="container">
+    </div>
 
-<div id="holder">
-    <img src="" id="img">
-</div>
 
-<div id="tools"></div>
+    <!--Container Box-->
+    <div id="container">
 
-</div>
+        <!--Marco Imagen-->
+        <div id="holder">
+            <img src="" id="img">
+        </div>
 
-<script type="text/javascript" src="cmp.js"></script>    
+        <!--Tool Box-->
+        <div class="tools">
+            <h2>Tool Box</h2>
+            <hr>
+
+            <div id="elements">
+                <div class="box">
+                    <h3>Highlights</h3>
+                    <img class="item" src="img/highlights.png" alt="Focus">
+                </div>
+
+                <div class="box">
+                    <h3>Midtones</h3>
+                    <img class="item" src="img/midtones.png" alt="Focus">
+                </div>
+
+                <div class="box">
+                    <h3>Darks</h3>
+                    <img class="item" src="img/darks.png" alt="Focus">
+                </div>
+
+                <div class="box">
+                    <h3>Depth of Field</h3>
+                    <img class="item" src="img/focus.png" alt="Focus">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="cmp.js"></script>
 </body>
+
 </html>
