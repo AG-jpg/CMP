@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Critique My Pic</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.css">
+    <!--Scripts-->
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
 </head>
@@ -15,26 +18,15 @@
     <!--Title-->
     <div id="top">
         <h1>Critique My Pic</h1>
-        <!--Uplaoder-->
-        <input type="file" id="button">
-        <br>
-        <p>Uplaod your picture</p>
-
     </div>
 
 
     <!--Container Box-->
     <div id="container">
 
-        <!--Marco Imagen-->
-        <div id="holder">
-            <img src="" id="img">
-        </div>
-
         <!--Tool Box-->
         <div class="tools">
-            <h2>Tool Box</h2>
-            <hr>
+            <h2>Tools</h2>
 
             <div id="elements">
                 <div class="box">
@@ -59,6 +51,41 @@
             </div>
         </div>
 
+        <!--Marco Imagen-->
+        <div id="holder">
+            <img src="" id="img">
+        </div>
+
+        <!--Notes-->
+        <div class="tools">
+            <h2>Notes</h2>
+            <div id="add">
+            <button id="add_note" >+</button>
+        </div>
+
+            <div id="notes">
+                <div class="note">
+                    <textarea placeholder="comments"></textarea>
+                </div>
+
+                <div class="note">
+                    <textarea placeholder="comments"></textarea>
+                </div>
+
+                <div class="note">
+                    <textarea placeholder="comments"></textarea>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="top">
+        <!--Uplaoder-->
+        <p>Uplaod your picture</p>
+        <input type="file" id="button">
+        <br>
     </div>
 
     <script type="text/javascript" src="cmp.js"></script>
