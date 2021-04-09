@@ -1,35 +1,38 @@
 *{
-    margin: auto;
-    background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #121212;
 }
 
 #top{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    flex-grow: 1;
-    margin: 20px;
 }
 
-h1{
-    margin: 30px;
+#bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /*Container*/
 #container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     flex-grow: 1;
+    margin: 20px;
 }
 
 /*Image Holder*/
 #holder{
-    width: 800px;
+    width: 50%;
     min-height: 600px;
     border: 2px solid #fbfbfb;
     border-radius: 9px;
@@ -37,7 +40,7 @@ h1{
 }
 
 #img{
-    max-width: 750px;
+    max-width: 95%;
     max-height: 550px;
     margin: 20px;
 }
@@ -46,24 +49,27 @@ h1{
 
 /*Tool Box*/
 .tools{
-    width: 800px;
-    height: auto;
+    max-width: 20%;
+    min-height: 600px;
     margin: 20px;
+    border: 2px solid #fbfbfb;
+    border-radius: 9px;
 }
 
 h2{
 text-align: center;
 }
 
-hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 #elements{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    text-align: center;
+    margin: 20px;
 }
 
 .item{
@@ -71,16 +77,67 @@ hr{
     height: 50px;
 }
 
-.box{
-    text-align: center;
-}
-
-.box h3{
-    display: block;
-    margin-bottom: 20px;
-}
-
 /*End of Tool Box*/
+
+/*Notes*/
+#add_note{
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: #673085;
+    border-radius: 20px;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+#add_note:active{
+    transform: translate(0px, -5px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#add{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#notes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.note{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: papayawhip;
+    height: 130px;
+    width: 130px;
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.note textarea{
+    background-color: transparent;
+    min-height: 90px;
+    max-width: 110px;
+    font-size: 18px;
+    text-align: center;
+    border: transparent;
+    color: #121212;
+}
+
+
+/*End of notes*/
 
 /*Responsive*/
 @media (max-width: 900px){
